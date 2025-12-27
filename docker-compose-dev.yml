@@ -1,11 +1,11 @@
-version: '3'
+version: "3"
 services:
   web:
     build:
       context: .
       dockerfile: Dockerfile.dev
     ports:
-      - '3000:3000'
+      - "3000:3000"
     volumes:
       - /app/node_modules
       - .:/app
@@ -20,4 +20,4 @@ services:
       - .:/app
     environment:
       - WATCHPACK_POLLING=true
-    command: [ "npm", "run", "test", "--", "--watchAll" ]
+    command: ["npm", "run", "test", "--", "--watchAll"]
