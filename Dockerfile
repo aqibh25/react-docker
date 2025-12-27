@@ -20,6 +20,9 @@ RUN npm run build
 # FROM is used to specify the base image
 FROM nginx
 
+# 80 is the port number for nginx
+EXPOSE 80
+
 # COPY is used to copy the build files to the nginx container
 COPY --from=builder /app/build /usr/share/nginx/html
 
