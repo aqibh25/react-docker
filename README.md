@@ -40,7 +40,7 @@ The application is built using Docker containerization with the following compon
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:aqibh25/react-docker.git
    cd react-docker-training
    ```
 
